@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>convert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding text-center>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Price in DH</ion-label>
+      <ion-input type="text" text-right id="input"  [(ngModel)]="inputValue" ></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click)="convertEuro()">
+    Convert Euro
+  </ion-button>
+  <ion-button expand="block" (click)="convertDollar()">
+    Convert Dollar
+  </ion-button>
+  <ion-label id="euro"></ion-label>&nbsp;<ion-label>euro</ion-label><br/>
+  <ion-label id="dollar"></ion-label>&nbsp;<ion-label>dollar</ion-label><br/>
+  <div id="container">
+    <ion-button>
+      <ion-back-button  color="danger" defaultHref="/home" text="Acceuil"></ion-back-button>
+    </ion-button>
+  </div>
+</ion-content>

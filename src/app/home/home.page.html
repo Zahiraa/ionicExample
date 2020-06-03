@@ -13,8 +13,23 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<!--  <div id="container">-->
+<!--    <strong>Ready to create an app?</strong>-->
+<!--    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>-->
+<!--  </div>-->
+  <ion-button (click)=" CapturePhoto()">Prendre Photo</ion-button>
+  <img [src]="capturedSnapURL" />
+  <!--  </div>-->
+  <ion-item routerLink="/phone">
+    <ion-icon slot="start" color="medium" name="call-outline"></ion-icon>
+    <ion-label>Call</ion-label>
+  </ion-item>
+  <ion-item routerLink="/convert">
+    <ion-icon slot="start" color="medium" name="cash-outline"></ion-icon>
+    <ion-label>Convert</ion-label>
+  </ion-item>
+  <ion-item routerLink="/sqlite">
+    <ion-icon slot="start" color="medium" name="analytics-outline"></ion-icon>
+    <ion-label>Sqlite</ion-label>
+  </ion-item>
 </ion-content>

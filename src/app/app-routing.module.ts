@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'phone',
+    loadChildren: () => import('./phone/phone.module').then( m => m.PhonePageModule)
+  },
+  {
+    path: 'convert',
+    loadChildren: () => import('./convert/convert.module').then( m => m.ConvertPageModule)
+  },
+  {
+    path: 'sqlite',
+    loadChildren: () => import('./sqlite/sqlite.module').then( m => m.SqlitePageModule)
+  },
 ];
 
 @NgModule({

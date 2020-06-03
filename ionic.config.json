@@ -1,7 +1,8 @@
 {
   "name": "ionicExample",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
